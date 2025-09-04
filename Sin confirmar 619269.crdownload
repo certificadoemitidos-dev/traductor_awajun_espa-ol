@@ -1,0 +1,10 @@
+const traducciones = require('./awajun.json');
+
+function traducir(palabra) {
+  return traducciones[palabra] || palabra;
+}
+
+console.log(traducir('atash'));   // gallo
+console.log(traducir('nuwa'));    // mujer
+console.log(traducir('aishmag')); // hombre
+console.log(traducir('perro'));   // perro (no está en el diccionario, devuelve la palabra original)
